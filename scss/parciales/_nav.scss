@@ -83,6 +83,7 @@
         height: 70px;
         transition: all 0.1s;
         display: flex;
+        padding: 0px 2px 0px 2px;
         border-bottom: solid 3px $borde-verde;
     }
     &__enlace:hover {
