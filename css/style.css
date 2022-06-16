@@ -185,11 +185,10 @@ p {
   text-align: justify;
   letter-spacing: 1px;
   font-size: 20px;
-  height: 100%;
   font-weight: 500;
   line-height: 40px;
   margin: 0px;
-  padding: 80px;
+  padding: 30px;
 }
 
 .sectionSegunda__parrafo-fotos {
@@ -197,11 +196,9 @@ p {
   text-align: justify;
   letter-spacing: 1px;
   font-size: 20px;
-  height: 100%;
   font-weight: 500;
   line-height: 40px;
-  padding: 80px;
-  display: flex;
+  padding: 30px;
 }
 
 .sectionSegunda__div-carousel {
@@ -239,6 +236,23 @@ p {
   object-fit: cover;
 }
 
+.sectionSegunda .divFlex {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+.sectionSegunda .divFlex__parrafo-flex {
+  color: #ffffff;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  margin: 0px;
+  padding: 30px;
+}
+
 .sectionSegunda .rows {
   background-color: rgba(0, 0, 0, 0.233);
   height: 480px;
@@ -250,16 +264,25 @@ p {
   border-bottom: #f1b14aa1 2px solid;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #f1b14a63;
+}
+
+.sectionSegunda .rows__imagenes-derecha {
+  border-top: #f1b14aa1 2px solid;
+  border-left: #f1b14aa1 2px solid;
+  border-bottom: #f1b14aa1 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f1b14a63;
 }
 
 .sectionSegunda .rows .imagenes {
   height: 360px;
-  width: 76%;
-  margin: 0% 13% 0% 13%;
+  width: 500px;
+  margin: 30px;
   object-fit: cover;
-  justify-self: center;
-  align-self: center;
   border: #0f3630 2px solid;
 }
 

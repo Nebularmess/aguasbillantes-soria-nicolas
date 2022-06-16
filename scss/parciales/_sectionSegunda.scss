@@ -11,22 +11,19 @@
         text-align: justify;
         letter-spacing: 1px;
         font-size: 20px;
-        height: 100%;
         font-weight: 500;
         line-height: 40px;
         margin: 0px;
-        padding: 80px;
+        padding: 30px;
     }
     &__parrafo-fotos {
         color: $color-texto;
         text-align: justify;
         letter-spacing: 1px;
         font-size: 20px;
-        height: 100%;
         font-weight: 500;
         line-height: 40px;
-        padding: 80px;
-        display: flex;
+        padding: 30px;
     }
     &__div-carousel {
         display: flex;
@@ -58,6 +55,21 @@
         width: 90%;
         object-fit: cover;
     }
+    .divFlex {
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+        &__parrafo-flex {
+            color: $color-texto;
+            text-align: justify;
+            letter-spacing: 1px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 40px;
+            margin: 0px;
+            padding: 30px;
+        }
+    }
     .rows {
         background-color: rgba(0, 0, 0, 0.233);
         height: 480px;
@@ -68,15 +80,23 @@
             border-bottom: map-get($bordes, borde-amarillo-map);
             display: flex;
             align-items: center;
+            justify-content: center;
+            background-color: #f1b14a63;
+        }
+        &__imagenes-derecha {
+            border-top: map-get($bordes, borde-amarillo-map);
+            border-left: map-get($bordes, borde-amarillo-map);
+            border-bottom: map-get($bordes, borde-amarillo-map);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: #f1b14a63;
         }
         .imagenes {
             height: 360px;
-            width: 76%;
-            margin: 0% 13% 0% 13%;
+            width: 500px;
+            margin: 30px;
             object-fit: cover;
-            justify-self: center;
-            align-self: center;
             border: map-get($bordes, borde-verde-map);
         }
     }
