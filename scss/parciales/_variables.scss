@@ -4,3 +4,9 @@ $borde-verde: #0f3630;
 $verde-intermedio: #4d774e;
 $verde-clar: #9dc88d;
 $amarillo-natural: #f1b24a;
+$amarillo-bordes:#f1b14aa1;
+$borde-verde-map: #0f3630b4;
+$bordes: (
+    borde-amarillo-map: $amarillo-bordes 2px solid,
+    borde-verde-map: $borde-verde 2px solid,
+);
