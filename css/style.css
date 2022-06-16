@@ -255,8 +255,8 @@ p {
 
 .sectionSegunda .rows .imagenes {
   height: 360px;
-  width: 90%;
-  margin: 0% 5% 0% 5%;
+  width: 70%;
+  margin: 0% 15% 0% 15%;
   object-fit: cover;
   justify-self: center;
   align-self: center;
