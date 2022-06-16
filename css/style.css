@@ -1,0 +1,278 @@
+.header {
+  background-color: #134139;
+  height: 70px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  background-color: #134139;
+  border-bottom: #0f3630 solid 3px;
+}
+
+.header__izquierda {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header__marca {
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  margin-right: 7%;
+  margin-left: 0px;
+}
+
+.header__logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.header__proyecto {
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__derecha {
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  --bs-gutter-x: 0px;
+  --be-gutter-y: 0px;
+}
+
+.main {
+  padding: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.enlaces {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.enlaces:hover {
+  color: #ffffff;
+}
+
+.body {
+  padding: 0;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
+}
+
+.nav {
+  padding: 15px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav__lista {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-items: space-between;
+  align-content: center;
+  font-size: 20px;
+  max-width: 100%;
+  height: 70px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav__item {
+  height: 70px;
+  display: flex;
+}
+
+.nav__item-volver {
+  display: none;
+}
+
+.nav__enlace {
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  color: #ffffff;
+  height: 70px;
+  transition: all 0.5s;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  border-bottom: 3px solid #0f3630;
+}
+
+.nav__enlace:hover {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #134139;
+}
+
+.nav__paginas {
+  align-self: center;
+}
+
+.nav .volver {
+  display: none;
+}
+
+.sectionPrimera {
+  background-image: url(https://picsum.photos/200);
+  height: 250px;
+  border-bottom: 1px solid #0f3630;
+}
+
+.sectionPrimera__fondo {
+  background-image: linear-gradient(180deg, rgba(241, 178, 74, 0.8) 0%, rgba(241, 178, 74, 0) 50%, rgba(241, 178, 74, 0.8) 100%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sectionPrimera__titulo {
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  color: #ffffff;
+}
+
+.sectionSegunda {
+  background-image: linear-gradient(90deg, #164a41 0%, #164a41 54%, #4d774e 100%);
+  padding-top: 5px;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.sectionSegunda__div-parrafo {
+  padding: 10px;
+  min-height: 100%;
+}
+
+.sectionSegunda__parrafo {
+  color: #ffffff;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.sectionSegunda__div-carousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: space-evenly;
+}
+
+.sectionSegunda .tituloSecundario {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.sectionSegunda .carousel {
+  width: 90%;
+  align-self: center;
+}
+
+.sectionSegunda .carousel-inner {
+  border: solid 1px #0f3630;
+}
+
+.sectionSegunda .carousel__imagenes {
+  height: 360px;
+  width: 90%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #134139;
+  height: 70px;
+  display: flex;
+  border-top: solid 3px #0f3630;
+}
+
+.footer__izquierda {
+  display: flex;
+}
+
+.footer__marca {
+  height: 60px;
+  width: 60px;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.footer__logo {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+
+.footer__proyecto {
+  font-size: 22px;
+  margin-left: 30px;
+  align-self: center;
+}
+
+.footer__lista {
+  list-style: none;
+  display: flex;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.footer__enlaces {
+  align-self: center;
+}
+
+.footer__items {
+  list-style: none;
+  align-self: center;
+  display: flex;
+}
+
+.footer__iconos {
+  font-size: 50px;
+  border-radius: 16px;
+  border: solid 3px #ffffff;
+  transition: 0.2s;
+  align-self: center;
+}
+
+.footer__iconos:hover {
+  color: #134139;
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+.header {
+    background-color: $color-header;
+    height: 70px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: $color-header;
+    border-bottom: $borde-verde solid 3px;
+    &__izquierda {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    &__marca {
+        height: 60px;
+        width: 60px;
+        text-decoration: none;
+        margin-right: 7%;
+        margin-left: 0px;
+    }
+    &__logo {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+    }
+    &__proyecto {
+        font-family: 'Abril Fatface', cursive;
+        font-style: italic;
+        font-size: 26px;
+        color: $color-texto;
+    }
+    &__menu {
+        display: none;
+    }
+    &__derecha {
+        display: flex;
+        justify-content: space-between;
+    }
+}

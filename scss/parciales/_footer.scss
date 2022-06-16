@@ -1,0 +1,54 @@
+.footer {
+    background-color: $color-header;
+    height: 70px;
+    display: flex;
+    border-top: solid 3px $borde-verde;
+    &__izquierda {
+        display: flex;
+    }
+    &__marca {
+        height: 60px;
+        width: 60px;
+        justify-self: flex-start;
+        align-self: center;
+    }
+    &__logo {
+        height: 60px;
+        width: 60px;
+        object-fit: cover;
+    }
+    &__proyecto {
+        font-size: 22px;
+        margin-left: 30px;
+        align-self: center;
+    }
+    &__lista {
+        list-style: none;
+        display: flex;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 65px;
+    }
+    &__enlaces {
+        align-self: center;
+    }
+    &__items {
+        list-style: none;
+        align-self: center;
+        display: flex;
+    }
+    &__iconos {
+        font-size: 50px;
+        border-radius: 16px;
+        border: solid 3px $color-texto;
+        transition: 0.2s;
+        align-self: center;
+    }
+    &__iconos:hover {
+        color: $color-header;
+        background-color: $color-texto;
+    }
+}
