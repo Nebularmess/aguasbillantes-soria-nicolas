@@ -58,8 +58,6 @@
 
 .main {
   padding: 0px;
-  min-height: 100vh;
-  background-image: linear-gradient(90deg, #164a41 0%, #164a41 54%, #4d774e 100%);
 }
 
 h1 {
