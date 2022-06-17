@@ -1,5 +1,5 @@
 .sectionPrimera {
-    background-image: url(../images/index-1.jpg);
+    background-image: url(../images/index-2.jpg);
     background-size: cover;
     height: 400px;
     &__fondo {
@@ -15,5 +15,10 @@
         background-color: rgba(0, 0, 0, 0.527);
         color: $color-texto;
     }
+}
+.sectionPrimera-nosotros {
+    background-image: url(../images/index-2.jpg);
+    background-size: cover;
+    height: 400px;
 }
 

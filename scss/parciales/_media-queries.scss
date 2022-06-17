@@ -1,0 +1,27 @@
+@media screen and (max-width: 1023px) {
+    .header {
+        &__proyecto {
+            font-size: 20px;
+        }
+    }
+    .nav {
+        &__enlace {
+            font-size: 14px;
+        }
+    }
+    .sectionSegunda__parrafo {
+        font-size: 16px;
+    }
+    .tituloSecundario {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .rows {
+        height: 400px!important;
+    }
+    .imagenes {
+        width: 300px !important;
+        height: 250px !important;
+    }
+}
