@@ -8,10 +8,8 @@
 
     &__item {
         text-decoration: none;
-        transition: all 1s;
         height: 70px;
         display: flex;
-        transition: 0.05s;
     }
     &__item-volver {
         display: none;
@@ -21,9 +19,9 @@
         font-family: 'Abril Fatface', cursive;
         color: $color-texto;
         height: 70px;
-        transition: all 0.1s;
+        transition: all 0.5s;
         display: flex;
-        padding: 0px 2px 0px 2px;
+        padding: 0px 6px 0px 6px;
         border-bottom: solid 3px $borde-verde;
     }
     &__enlace:hover {

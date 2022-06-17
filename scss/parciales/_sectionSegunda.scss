@@ -59,6 +59,7 @@
         display: flex;
         align-items: center;
         min-height: 100px;
+        border: map-get($bordes, borde-verde-map);
         &__parrafo-flex {
             color: $color-texto;
             text-align: justify;

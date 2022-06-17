@@ -1,5 +1,6 @@
 .sectionPrimera {
-    background-image: url(https://picsum.photos/200);
+    background-image: url(../images/index-1.jpg);
+    background-size: cover;
     height: 400px;
     &__fondo {
         background-image: linear-gradient(180deg, rgba(241,178,74,0.8) 0%, rgba(241,178,74,0) 50%, rgba(241,178,74,0.8) 100%);
@@ -8,10 +9,10 @@
         align-items: center;
     }
     &__titulo {
-        padding: 2px;
+        padding: 10px;
         text-align: center;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.411);
+        background-color: rgba(0, 0, 0, 0.527);
         color: $color-texto;
     }
 }

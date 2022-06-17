@@ -100,10 +100,8 @@ p {
 
 .nav__item {
   text-decoration: none;
-  transition: all 1s;
   height: 70px;
   display: flex;
-  transition: 0.05s;
 }
 
 .nav__item-volver {
@@ -115,9 +113,9 @@ p {
   font-family: 'Abril Fatface', cursive;
   color: #ffffff;
   height: 70px;
-  transition: all 0.1s;
+  transition: all 0.5s;
   display: flex;
-  padding: 0px 2px 0px 2px;
+  padding: 0px 6px 0px 6px;
   border-bottom: solid 3px #0f3630;
 }
 
@@ -151,7 +149,8 @@ p {
 }
 
 .sectionPrimera {
-  background-image: url(https://picsum.photos/200);
+  background-image: url(../images/index-1.jpg);
+  background-size: cover;
   height: 400px;
 }
 
@@ -163,10 +162,10 @@ p {
 }
 
 .sectionPrimera__titulo {
-  padding: 2px;
+  padding: 10px;
   text-align: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.411);
+  background-color: rgba(0, 0, 0, 0.527);
   color: #ffffff;
 }
 
@@ -208,9 +207,9 @@ p {
   flex-wrap: wrap;
   flex-direction: space-evenly;
   background-color: #f1b14a63;
-  border-top: #f1b14aa1 2px solid;
-  border-left: #f1b14aa1 2px solid;
-  border-bottom: #f1b14aa1 2px solid;
+  border-top: #fd9c00a1 2px solid;
+  border-left: #fd9c00a1 2px solid;
+  border-bottom: #fd9c00a1 2px solid;
 }
 
 .sectionSegunda .tituloSecundario {
@@ -227,7 +226,7 @@ p {
 }
 
 .sectionSegunda .carousel-inner {
-  border: #0f3630 2px solid;
+  border: #002c2585 2px solid;
 }
 
 .sectionSegunda .carousel__imagenes {
@@ -240,6 +239,7 @@ p {
   display: flex;
   align-items: center;
   min-height: 100px;
+  border: #002c2585 2px solid;
 }
 
 .sectionSegunda .divFlex__parrafo-flex {
@@ -259,9 +259,9 @@ p {
 }
 
 .sectionSegunda .rows__imagenes {
-  border-top: #f1b14aa1 2px solid;
-  border-right: #f1b14aa1 2px solid;
-  border-bottom: #f1b14aa1 2px solid;
+  border-top: #fd9c00a1 2px solid;
+  border-right: #fd9c00a1 2px solid;
+  border-bottom: #fd9c00a1 2px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,9 +269,9 @@ p {
 }
 
 .sectionSegunda .rows__imagenes-derecha {
-  border-top: #f1b14aa1 2px solid;
-  border-left: #f1b14aa1 2px solid;
-  border-bottom: #f1b14aa1 2px solid;
+  border-top: #fd9c00a1 2px solid;
+  border-left: #fd9c00a1 2px solid;
+  border-bottom: #fd9c00a1 2px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -283,7 +283,7 @@ p {
   width: 500px;
   margin: 30px;
   object-fit: cover;
-  border: #0f3630 2px solid;
+  border: #002c2585 2px solid;
 }
 
 .footer {
