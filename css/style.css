@@ -175,6 +175,12 @@ p {
   height: 400px;
 }
 
+.sectionPrimera-ayudanos {
+  background-image: url(../images/yaguarete.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
 .sectionSegunda {
   display: flex;
   align-content: space-between;
@@ -340,6 +346,94 @@ p {
   margin: 30px;
   object-fit: cover;
   border: #002c2585 2px solid;
+}
+
+.sectionDonaciones {
+  min-height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.527);
+  display: flex;
+}
+
+.sectionDonaciones__titulo {
+  font-size: 28px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 0px;
+}
+
+.sectionDonaciones .divCard {
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "top-left top-right" "bot-left bot-right";
+  justify-items: center;
+  align-items: center;
+}
+
+.sectionDonaciones .card {
+  height: 400px;
+  width: 280px;
+  border: #f1b24a solid 2px;
+}
+
+.sectionDonaciones .card .cardImagen {
+  height: 250px;
+  width: 100%;
+  border: #002c2585 2px solid;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.sectionDonaciones .card .card-body {
+  padding: 0px;
+  color: black;
+}
+
+.sectionDonaciones .card .card-title {
+  color: black;
+  text-align: center;
+  background-color: #9dc88d;
+  margin: 0px;
+  padding: 5px;
+}
+
+.sectionDonaciones .card .divCard-body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #9dc88d;
+}
+
+.sectionDonaciones .card .card-descripcion {
+  min-width: 100%;
+  border-bottom: #002c2585 1px solid;
+  padding: 5px;
+}
+
+.sectionDonaciones .card .card-descripcion-primero {
+  min-width: 100%;
+  border-top: #002c2585 1px solid;
+  border-bottom: #002c2585 1px solid;
+  padding: 5px;
+}
+
+.sectionDonaciones .card .btn-primary {
+  border-radius: 0px;
+  background-color: #134139;
+  border: solid 1px #0f3630;
+  transform: all 1s;
+}
+
+.sectionDonaciones .card .btn-primary:hover {
+  background-color: #f1b24a;
+  border: solid 1px #fd9c00a1;
+}
+
+.sectionDonaciones .card .card-adquirir {
+  width: 100%;
 }
 
 .footer {

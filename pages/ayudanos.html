@@ -12,29 +12,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@1,900&family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="body container-fluid">
-    <header class="header row fixed">
-        <div class="col-md-7 fondo">
+    <header class="header row">
+        <div class="header__izquierda col-md-7">
             <a class="header__marca" href="../index.html">
                 <img class="header__logo" src="../images/logochico.png" alt="logo">
             </a>
             <span class="header__proyecto">PROYECTO AGUAS BRILLANTES</span>
-            <a href="#lateral" class="header__open">
+            <a href="#lateral" class="header__menu">
                 <span class="jam jam-menu"></span>
             </a>
         </div>
-        <div class="col-md-5 header__lista">
+        <div class="col-md-5">
             <nav class="nav" id="lateral">
-                <ul class="nav__lista header__derecha">
+                <ul class="nav__lista nav__derecha">
                     <li class="nav__item">
                         <a class="nav__enlace" href="nosotros.html"><span class="nav__paginas">Nosotros</span></a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__enlace" href="unite.html"><span class="nav__paginas">Unite</span></a>
+                        <a class= "nav__enlace" href="unite.html"><span class="nav__paginas">Unite</span></a>
                     </li>
                     <li class="nav__item">
                         <a class="nav__enlace" href="ayudanos.html"><span class="nav__paginas">Ayudanos</span></a>
@@ -43,118 +43,104 @@
                         <a class="nav__enlace" href="contactanos.html"><span class="nav__paginas">Contactanos</span></a>
                     </li>
                     <li class="nav__item-volver">
-                        <a class="nav__enlace volver" href="#"><span class="jam jam-close"></span></a>
+                        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
                     </li>
                 </ul>
             </nav>
         </div>  
     </header>
-    <main class="row main__row bs">
-        <article class="container-fluid article">
-            <div class="div__article row bs">
-                <section class="col-md-7 section-izquierda">
-                    <h1 class="section__titulo">Ayudanos económicamente!</h1>
-                    <p class="section__parrafo">
-                        Si te sientes identificado y no posees tiempo para invertirlo y comprometerte, 
-                        te invitarnos a asistirnos de forma económica mediante una donación para poder seguir 
-                        realizando esta series de tareas con más recursos! <br>
-                        Todas las donaciones se realizan mediante mercado pago, según el monto con el que colabores obtienes una credencial de nuestros animales. Selecciona la credencial que desees!
-                    </p>
-                    <div class="section__div">
-                        <img class="section__imagen" src="../images/ayudanos.png" alt="aguara guazu">
-                        <p class="section__epigrafe">Imagen obtenida de <a class="enlaces" href="https://sib.gob.ar/">aquí</a></p>
-                    </div>
-                </section>
-                <section class="col-md-5 section__derecha">
-                    <h3 class="section__titulo-derecha">Selecciona la credencial que desees y abona su costo para ayudarnos</h3>
-                    <div class="donaciones">
-                            <div class="card">
-                                <img src="../images/ciervocred.PNG" class="card-img-top" alt="ciervo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Credencial Ciervo</h5>
-                                    <p class="card-text">
-                                        Donacion: 100$ <br>
-                                        Nivel: 1 <br>
-                                        Duración: 1 año
-                                    </p>
-                                    <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary">ADQUIRIR</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="../images/aguara.PNG" class="card-img-top" alt="Aguara guazú">
-                                <div class="card-body">
-                                    <h5 class="card-title">Credencial Aguara</h5>
-                                    <p class="card-text">
-                                        Donacion: 300$ <br>
-                                        Nivel: 2 <br>
-                                        Duración: 1 año
-                                    </p>
-                                    <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary">ADQUIRIR</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="../images/yaguarete.PNG" class="card-img-top" alt="yaguarete">
-                                <div class="card-body">
-                                    <h5 class="card-title">Credencial yaguarete</h5>
-                                    <p class="card-text">
-                                        Donacion: 500$ <br>
-                                        Nivel: 3 <br>
-                                        Duración: 1 año
-                                    </p>
-                                    <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary">ADQUIRIR</a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="../images/carp-card.png" class="card-img-top" alt="carpincho">
-                                <div class="card-body">
-                                    <h5 class="card-title">Credencial carpincho</h5>
-                                    <p class="card-text">
-                                        Donacion: 1000$ <br>
-                                        Nivel: 4 <br>
-                                        Duración: 1 año
-                                    </p>
-                                    <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary">ADQUIRIR</a>
-                                </div>
-                            </div>
-                    </div>
-                </section>
+    <main class="main container-fluid">
+        <section class="row sectionPrimera-ayudanos">
+            <div class="sectionPrimera__fondo">
+                <h1 class="sectionPrimera__titulo">AYUDANOS</h1>
             </div>
-        </article>
+        </section>
+        <section class="row sectionDonaciones">
+            <h2 class="sectionDonaciones__titulo">Puedes asistirnos comprando una de nuestras credenciales</h2>
+            <div class="divCard">
+                <div class="card">
+                    <img src="../images/ciervo-card.jpg" class="cardImagen card-img-top" alt="ciervo">
+                    <div class="card-body">
+                        <h5 class="card-title">Credencial Ciervo</h5>
+                        <div class="divCard-body">
+                            <span class="card-descripcion-primero">Donacion: 100$</span>
+                            <span class="card-descripcion"> Nivel: 1 </span>
+                            <span class="card-descripcion"> Duración: 1 año </span>
+                            <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary card-adquirir">ADQUIRIR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/aguara-card.jpg" class="cardImagen card-img-top" alt="aguara">
+                    <div class="card-body">
+                        <h5 class="card-title">Credencial Aguara Guazu</h5>
+                        <div class="divCard-body">
+                            <span class="card-descripcion-primero">Donacion: 300$</span>
+                            <span class="card-descripcion"> Nivel: 2 </span>
+                            <span class="card-descripcion"> Duración: 1 año </span>
+                            <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary card-adquirir">ADQUIRIR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/yaguarete-card.jpg" class="cardImagen card-img-top" alt="yaguarete">
+                    <div class="card-body">
+                        <h5 class="card-title">Credencial Yaguarete</h5>
+                        <div class="divCard-body">
+                            <span class="card-descripcion-primero">Donacion: 500$</span>
+                            <span class="card-descripcion"> Nivel: 3 </span>
+                            <span class="card-descripcion"> Duración: 1 año </span>
+                            <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary card-adquirir">ADQUIRIR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../images/carpincho.PNG" class="cardImagen card-img-top" alt="carpincho">
+                    <div class="card-body">
+                        <h5 class="card-title">Credencial Carpincho Gaucho</h5>
+                        <div class="divCard-body">
+                            <span class="card-descripcion-primero">Donacion: 1000$</span>
+                            <span class="card-descripcion"> Nivel: 4 </span>
+                            <span class="card-descripcion"> Duración: 1 año </span>
+                            <a href="https://www.mercadopago.com.ar/home" class="btn btn-primary card-adquirir">ADQUIRIR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <div class="container-fluid containerFooter">
-        <footer class="footer row">
-            <div class="footer__izquierda col-md-7">
-                <a class="footer__marca" href="../index.html">
-                    <img class="footer__logo" src="../images/logochico.png"  alt="logo">
-                </a>
-                <span class="footer__proyecto">Siguenos en nuestras redes sociales!</span>
-            </div>
-            <div class="footer__derecha col-md-5">
-                <ul class="footer__lista">
-                    <li class="footer__item">
-                        <a class="footer__enlaces enlaces" href="https://www.facebook.com/">
-                            <span class="jam jam-facebook footer__iconos footer__iconos-fb"></span>
-                        </a>
-                    </li>
-                    <li class="footer__item">  
-                        <a class="footer__enlaces enlaces" href="https://www.instagram.com/">
-                        <span class="jam jam-instagram footer__iconos footer__iconos-ig"></span>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__enlaces enlaces" href="https://www.twitter.com/">
-                            <span class="jam jam-twitter footer__iconos footer__iconos-tw"></span>
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="footer__enlaces enlaces" href="https://www.youtube.com/">
-                            <span class="jam jam-youtube-circle footer__iconos footer__iconos-yt"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </div>
+    <footer class="footer row">
+        <div class="col-md-7 footer__izquierda">
+            <a class="enlaces footer__marca" href="../index.html">
+                <img class="footer__logo" src="../images/logochico.png"  alt="logo">
+            </a>
+            <span class="footer__proyecto">Siguenos en nuestras redes sociales!</span>
+        </div>
+        <div class="col-md-5">
+            <ul class="footer__lista">
+                <li class="footer__items">
+                    <a class="enlaces" href="https://www.facebook.com/">
+                        <span class="jam jam-facebook footer__iconos footer__iconos-fb"></span>
+                    </a>
+                </li>
+                <li class="footer__items">  
+                    <a class="enlaces" href="https://www.instagram.com/">
+                    <span class="jam jam-instagram footer__iconos footer__iconos-ig"></span>
+                    </a>
+                </li>
+                <li class="footer__items">
+                    <a class="enlaces" href="https://www.twitter.com/">
+                        <span class="jam jam-twitter footer__iconos footer__iconos-tw"></span>
+                    </a>
+                </li>
+                <li class="footer__items">
+                    <a class="enlaces" href="https://www.youtube.com/">
+                        <span class="jam jam-youtube-circle footer__iconos footer__iconos-yt"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
