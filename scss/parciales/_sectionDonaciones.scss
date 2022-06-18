@@ -25,6 +25,7 @@
         height: 400px;
         width: 280px;
         border: #f1b24a solid 2px;
+        transition: all 1s;
 
         .cardImagen {
             height: 250px;
@@ -74,6 +75,9 @@
         .card-adquirir {
             width: 100%;
         }
+    }
+    .card:hover {
+        transform: scale(1.2);
     }
 }
 

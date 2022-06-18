@@ -181,6 +181,12 @@ p {
   height: 400px;
 }
 
+.sectionPrimera-unite {
+  background-image: url(../images/yacare-u.jpg);
+  background-size: cover;
+  height: 400px;
+}
+
 .sectionSegunda {
   display: flex;
   align-content: space-between;
@@ -217,7 +223,17 @@ p {
   height: 100%;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: space-evenly;
+  background-color: #f1b14a63;
+  border-top: #fd9c00a1 2px solid;
+  border-left: #fd9c00a1 2px solid;
+  border-bottom: #fd9c00a1 2px solid;
+}
+
+.sectionSegunda__div-form {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   background-color: #f1b14a63;
   border-top: #fd9c00a1 2px solid;
   border-left: #fd9c00a1 2px solid;
@@ -377,6 +393,7 @@ p {
   height: 400px;
   width: 280px;
   border: #f1b24a solid 2px;
+  transition: all 1s;
 }
 
 .sectionDonaciones .card .cardImagen {
@@ -434,6 +451,50 @@ p {
 
 .sectionDonaciones .card .card-adquirir {
   width: 100%;
+}
+
+.sectionDonaciones .card:hover {
+  transform: scale(1.2);
+}
+
+.form {
+  border: #002c2585 solid 2px;
+  border-radius: 5px;
+  height: 380px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4d774e;
+  padding: 0px;
+}
+
+.form__titulo {
+  margin: 5px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 1px #002c2585 solid;
+}
+
+.form__label {
+  margin: 5px;
+}
+
+.form__input {
+  margin: 5px;
+}
+
+.form .divGenero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.form .btn-success {
+  width: 100%;
+  margin-top: 5px;
+  border: #002c2585 1px solid;
 }
 
 .footer {
