@@ -712,6 +712,9 @@ p {
   .header__izquierda {
     justify-content: space-between;
   }
+  .header__marca {
+    margin-right: 0px;
+  }
   .header__proyecto {
     font-size: 16px;
   }
