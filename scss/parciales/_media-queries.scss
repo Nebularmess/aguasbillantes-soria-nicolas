@@ -9,19 +9,92 @@
             font-size: 14px;
         }
     }
-    .sectionSegunda__parrafo {
-        font-size: 16px;
+    .sectionSegunda {
+        .sectionSegunda__parrafo {
+            font-size: 14px;
+        }
+        &__div-carousel {
+            align-content: space-around;
+        }
+        .tituloSecundario {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .carousel {
+            margin: 5px;
+            margin-bottom: 30px;
+
+            &__imagenes {
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        &__parrafo-fotos {
+            font-size: 14px;
+        }
+        .divFlex__parrafo-flex {
+            font-size: 14px;
+        }
+        .rows {
+            height: 448px;
+            .imagenes {
+                width: 300px;
+                margin: 0px;
+            }
+        }
+        .divMapa {
+            height: 280px;
+            width: 300px;
+            border: map-get($bordes, borde-verde-map);
+            margin: 5px;
+    
+            &__mapa {
+                height: 276px;
+                width: 296px;
+            }
+        }
+        .mapaIcono {
+            font-size: 25px;
+            align-self: flex-end;
+            justify-content: center;
+            display: flex;
+            margin-bottom: 5px;
+            color: $color-header;
+            width: 320px;
+    
+            &__descripcion {
+                font-size: 10px;
+                align-self: center;
+                font-family: 'Merriweather', serif;
+                padding-bottom: 2px;
+            }
+        }
+        .divFlex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 448px;
+            border: map-get($bordes, borde-verde-map);
+            &__parrafo-flex {
+                color: $color-texto;
+                text-align: justify;
+                letter-spacing: 1px;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 40px;
+                margin: 0px;
+                padding: 30px;
+            }
+            &__video {
+                height: 300px;
+                width: 400px;
+                border: map-get($bordes, borde-amarillo-map);
+            }
+        }
     }
-    .tituloSecundario {
-        font-size: 14px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .rows {
-        height: 400px!important;
-    }
-    .imagenes {
-        width: 300px !important;
-        height: 250px !important;
+    .form {
+        height: 390px;
+        width: 300px;
     }
 }

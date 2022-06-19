@@ -151,7 +151,7 @@ p {
 .sectionPrimera {
   background-image: url(../images/index-2.jpg);
   background-size: cover;
-  height: 400px;
+  height: calc(100vh - 70px);
   background-position: center;
 }
 
@@ -173,28 +173,28 @@ p {
 .sectionPrimera-nosotros {
   background-image: url(../images/fondo-nosotros.jpg);
   background-size: cover;
-  height: 400px;
+  height: calc(100vh - 70px);
   background-position: center;
 }
 
 .sectionPrimera-ayudanos {
   background-image: url(../images/yaguarete.jpg);
   background-size: cover;
-  height: 400px;
+  height: calc(100vh - 70px);
   background-position: center;
 }
 
 .sectionPrimera-unite {
   background-image: url(../images/yacare-u.jpg);
   background-size: cover;
-  height: 400px;
+  height: calc(100vh - 70px);
   background-position: center;
 }
 
 .sectionPrimera-contactanos {
   background-image: url(../images/fondo-contactanos.jpg);
   background-size: cover;
-  height: 400px;
+  height: calc(100vh - 70px);
   background-position: center;
 }
 
@@ -274,6 +274,7 @@ p {
 .sectionSegunda .divSection {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   min-height: 370px;
   width: 350px;
 }
@@ -292,9 +293,9 @@ p {
 
 .sectionSegunda .mapaIcono {
   font-size: 30px;
+  display: flex;
   align-self: flex-end;
   justify-self: center;
-  display: flex;
   margin-bottom: 5px;
   color: #134139;
   width: 350px;
@@ -302,7 +303,7 @@ p {
 
 .sectionSegunda .mapaIcono__descripcion {
   font-size: 15px;
-  align-self: flex-end;
+  align-self: center;
   font-family: 'Merriweather', serif;
   padding-bottom: 2px;
 }
@@ -491,7 +492,7 @@ p {
 .form {
   border: #002c2585 solid 2px;
   border-radius: 5px;
-  height: 380px;
+  height: 390px;
   width: 350px;
   display: flex;
   flex-wrap: wrap;
@@ -603,20 +604,88 @@ p {
   .nav__enlace {
     font-size: 14px;
   }
-  .sectionSegunda__parrafo {
-    font-size: 16px;
+  .sectionSegunda .sectionSegunda__parrafo {
+    font-size: 14px;
   }
-  .tituloSecundario {
+  .sectionSegunda__div-carousel {
+    align-content: space-around;
+  }
+  .sectionSegunda .tituloSecundario {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .rows {
-    height: 400px !important;
+  .sectionSegunda .carousel {
+    margin: 5px;
+    margin-bottom: 30px;
   }
-  .imagenes {
-    width: 300px !important;
-    height: 250px !important;
+  .sectionSegunda .carousel__imagenes {
+    height: 300px;
+    object-fit: cover;
+  }
+  .sectionSegunda__parrafo-fotos {
+    font-size: 14px;
+  }
+  .sectionSegunda .divFlex__parrafo-flex {
+    font-size: 14px;
+  }
+  .sectionSegunda .rows {
+    height: 448px;
+  }
+  .sectionSegunda .rows .imagenes {
+    width: 300px;
+    margin: 0px;
+  }
+  .sectionSegunda .divMapa {
+    height: 280px;
+    width: 300px;
+    border: #002c2585 2px solid;
+    margin: 5px;
+  }
+  .sectionSegunda .divMapa__mapa {
+    height: 276px;
+    width: 296px;
+  }
+  .sectionSegunda .mapaIcono {
+    font-size: 25px;
+    align-self: flex-end;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5px;
+    color: #134139;
+    width: 320px;
+  }
+  .sectionSegunda .mapaIcono__descripcion {
+    font-size: 10px;
+    align-self: center;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 2px;
+  }
+  .sectionSegunda .divFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 448px;
+    border: #002c2585 2px solid;
+  }
+  .sectionSegunda .divFlex__parrafo-flex {
+    color: #ffffff;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 0px;
+    padding: 30px;
+  }
+  .sectionSegunda .divFlex__video {
+    height: 300px;
+    width: 400px;
+    border: #fd9c00a1 2px solid;
+  }
+  .form {
+    height: 390px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

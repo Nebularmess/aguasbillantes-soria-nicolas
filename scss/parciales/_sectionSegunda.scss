@@ -66,6 +66,7 @@
     .divSection {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         min-height: 370px;
         width: 350px;
     }
@@ -82,16 +83,16 @@
     }
     .mapaIcono {
         font-size: 30px;
+        display: flex;
         align-self: flex-end;
         justify-self: center;
-        display: flex;
         margin-bottom: 5px;
         color: $color-header;
         width: 350px;
 
         &__descripcion {
             font-size: 15px;
-            align-self: flex-end;
+            align-self: center;
             font-family: 'Merriweather', serif;
             padding-bottom: 2px;
         }

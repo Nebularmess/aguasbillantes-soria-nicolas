@@ -1,7 +1,7 @@
 .sectionPrimera {
     background-image: url(../images/index-2.jpg);
     background-size: cover;
-    height: 400px;
+    height: calc(100vh - 70px);
     background-position: center;
     &__fondo {
         background-image: linear-gradient(180deg, rgba(241,178,74,0.8) 0%, rgba(241,178,74,0) 50%, rgba(241,178,74,0.8) 100%);
@@ -20,25 +20,25 @@
 .sectionPrimera-nosotros {
     background-image: url(../images/fondo-nosotros.jpg);
     background-size: cover;
-    height: 400px;
+    height: calc(100vh - 70px);
     background-position: center;
 }
 .sectionPrimera-ayudanos {
     background-image: url(../images/yaguarete.jpg);
     background-size: cover;
-    height: 400px;
+    height: calc(100vh - 70px);
     background-position: center;
 }
 .sectionPrimera-unite {
     background-image: url(../images/yacare-u.jpg);
     background-size: cover;
-    height: 400px;
+    height: calc(100vh - 70px);
     background-position: center;
 }
 .sectionPrimera-contactanos {
     background-image: url(../images/fondo-contactanos.jpg);
     background-size: cover;
-    height: 400px;
+    height: calc(100vh - 70px);
     background-position: center;
 }
 
