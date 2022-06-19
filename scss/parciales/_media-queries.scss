@@ -102,6 +102,9 @@
 }
 @media screen and (max-width: 600px) {
     .header {
+        &__izquierda {
+            justify-content: space-between;
+        }
         &__proyecto {
             font-size: 16px;
         }
@@ -111,6 +114,7 @@
             color: $color-texto;
             font-size: 50px;
             height: 70px;
+
         }
         #lateral {
             height: 100vh;
@@ -187,6 +191,9 @@
                 height: 300px;
                 object-fit: cover;
             }
+        }
+        .divFlex__parrafo-flex {
+            font-size: 14px;
         }
     }
 }
