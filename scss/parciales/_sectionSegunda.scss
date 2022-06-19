@@ -27,8 +27,8 @@
     }
     &__div-carousel {
         display: flex;
-        height: 100%;
         justify-content: center;
+        min-height: 100px;
         flex-wrap: wrap;
         background-color: #f1b14a63;
         border-top: map-get($bordes, borde-amarillo-map);

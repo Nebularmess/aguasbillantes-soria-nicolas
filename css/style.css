@@ -119,7 +119,24 @@ p {
   border-bottom: solid 3px #0f3630;
 }
 
+.nav__enlace-nosotros {
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  color: #ffffff;
+  height: 70px;
+  transition: all 0.5s;
+  display: flex;
+  padding: 0px 6px 0px 6px;
+  border-bottom: solid 3px #0f3630;
+}
+
 .nav__enlace:hover {
+  text-decoration: none;
+  color: #134139;
+  background-color: #ffffff;
+}
+
+.nav__enlace-nosotros:hover {
   text-decoration: none;
   color: #134139;
   background-color: #ffffff;
@@ -231,8 +248,8 @@ p {
 
 .sectionSegunda__div-carousel {
   display: flex;
-  height: 100%;
   justify-content: center;
+  min-height: 100px;
   flex-wrap: wrap;
   background-color: #f1b14a63;
   border-top: #fd9c00a1 2px solid;
@@ -602,7 +619,10 @@ p {
     font-size: 20px;
   }
   .nav__enlace {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .nav__enlace-nosotros {
+    font-size: 12px;
   }
   .sectionSegunda .sectionSegunda__parrafo {
     font-size: 14px;
@@ -684,8 +704,93 @@ p {
     border: #fd9c00a1 2px solid;
   }
   .form {
-    height: 390px;
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__proyecto {
+    font-size: 16px;
+  }
+  .header__menu {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 50px;
+    height: 70px;
+  }
+  .header #lateral {
+    height: 100vh;
+    width: 80%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: all 1s;
+  }
+  .header #lateral:target {
+    left: 0%;
+  }
+  .nav {
+    padding: 0px;
+    background-color: #134139e8;
+  }
+  .nav__lista {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__item {
+    width: 100%;
+  }
+  .nav__enlace {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .nav__enlace-nosotros {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: solid 3px #0f3630;
+  }
+  .nav__enlace-volver {
+    text-decoration: none;
+    transition: all 0.5s;
+    display: flex;
+  }
+  .nav__item-volver {
+    display: block;
+    width: 100%;
+  }
+  .nav__menu {
+    margin: 0px;
+    font-size: 50px;
+    margin-top: 5px;
+  }
+  .nav__paginas {
+    align-self: center;
+  }
+  .sectionSegunda .sectionSegunda__parrafo {
+    font-size: 12px;
+  }
+  .sectionSegunda__div-carousel {
+    align-content: space-around;
+  }
+  .sectionSegunda .tituloSecundario {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sectionSegunda .carousel {
+    margin: 5px;
+    margin-bottom: 30px;
+  }
+  .sectionSegunda .carousel__imagenes {
+    height: 300px;
+    object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
