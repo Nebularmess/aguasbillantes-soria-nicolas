@@ -36,13 +36,10 @@
         &__parrafo-fotos {
             font-size: 14px;
         }
-        .divFlex__parrafo-flex {
-            font-size: 14px;
-        }
         .rows {
             height: 448px;
             .imagenes {
-                width: 300px;
+                width: 260px;
                 margin: 0px;
             }
         }
@@ -83,7 +80,7 @@
                 color: $color-texto;
                 text-align: justify;
                 letter-spacing: 1px;
-                font-size: 20px;
+                font-size: 14px;
                 font-weight: 500;
                 line-height: 40px;
                 margin: 0px;
@@ -110,6 +107,7 @@
         }
         &__proyecto {
             font-size: 16px;
+            text-align: center;
         }
         &__menu {
             display: block;
@@ -175,11 +173,13 @@
         }
     }
     .sectionSegunda {
+        position: relative;
         .sectionSegunda__parrafo {
             font-size: 12px;
         }
         &__div-carousel {
             align-content: space-around;
+            position: relative;
         }
         .tituloSecundario {
             font-size: 14px;
@@ -191,7 +191,7 @@
             margin-bottom: 30px;
 
             &__imagenes {
-                height: 300px;
+                height: 250px;
                 object-fit: cover;
             }
         }

@@ -21,11 +21,10 @@ h1 {
 p {
     margin-bottom: 0px;
 }
-
 .enlaces {
     text-decoration: none;
     color: $color-texto;
 }
-.enlaces:hover {
+.enlaces-active:hover {
     color: $color-texto;
 }

@@ -7,6 +7,22 @@
     flex-wrap: wrap;
     background-color: #4d774e;
     padding: 0px 5px 0px 5px;
+    
+    .shadow-form {
+        position: absolute;
+    }
+
+    .shadow-form::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: #000000;
+        z-index: -1;
+        filter: blur(1px);
+    }
 
     &__titulo {
         margin: 5px;

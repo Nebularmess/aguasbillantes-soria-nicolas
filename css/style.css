@@ -31,7 +31,7 @@ p {
   color: #ffffff;
 }
 
-.enlaces:hover {
+.enlaces-active:hover {
   color: #ffffff;
 }
 
@@ -39,11 +39,14 @@ p {
   background-color: #134139;
   height: 70px;
   margin: 0px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 0;
   background-color: #134139;
   border-bottom: #0f3630 solid 3px;
+  position: fixed;
+  z-index: 1000;
 }
 
 .header__izquierda {
@@ -75,6 +78,8 @@ p {
 
 .header__menu {
   display: none;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .header__derecha {
@@ -110,7 +115,6 @@ p {
 
 .nav__enlace {
   text-decoration: none;
-  font-family: 'Abril Fatface', cursive;
   color: #ffffff;
   height: 70px;
   transition: all 0.5s;
@@ -121,7 +125,6 @@ p {
 
 .nav__enlace-nosotros {
   text-decoration: none;
-  font-family: 'Abril Fatface', cursive;
   color: #ffffff;
   height: 70px;
   transition: all 0.5s;
@@ -144,6 +147,7 @@ p {
 
 .nav__paginas {
   align-self: center;
+  font-family: 'Merriweather';
 }
 
 .nav__lista {
@@ -153,7 +157,7 @@ p {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: center;
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
   height: 70px;
   justify-self: flex-start;
@@ -168,7 +172,7 @@ p {
 .sectionPrimera {
   background-image: url(../images/index-2.jpg);
   background-size: cover;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-position: center;
 }
 
@@ -190,34 +194,35 @@ p {
 .sectionPrimera-nosotros {
   background-image: url(../images/fondo-nosotros.jpg);
   background-size: cover;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-position: center;
 }
 
 .sectionPrimera-ayudanos {
   background-image: url(../images/yaguarete.jpg);
   background-size: cover;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-position: center;
 }
 
 .sectionPrimera-unite {
   background-image: url(../images/yacare-u.jpg);
   background-size: cover;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-position: center;
 }
 
 .sectionPrimera-contactanos {
   background-image: url(../images/fondo-contactanos.jpg);
   background-size: cover;
-  height: calc(100vh - 70px);
+  height: 100vh;
   background-position: center;
 }
 
 .sectionSegunda {
   display: flex;
   align-content: space-between;
+  flex-wrap: wrap;
   min-height: 100px;
 }
 
@@ -408,9 +413,66 @@ p {
 .sectionSegunda .rows .imagenes {
   height: 360px;
   width: 400px;
-  margin: 30px;
   object-fit: cover;
   border: #002c2585 2px solid;
+  transition: all 1s;
+}
+
+.sectionSegunda .rows .scale-in-top {
+  -webkit-animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.sectionSegunda .rows .imagenes:hover {
+  transform: scale(1.05);
+}
+
+.sectionSegunda .rows .shadow {
+  position: relative;
+}
+
+.sectionSegunda .rows .shadow::after {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #000000;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.sectionSegunda .rows .shadow-form {
+  position: relative;
+}
+
+.sectionSegunda .rows .shadow-form::after {
+  position: absolute;
+  top: -1.5%;
+  left: -1.5%;
+  width: 103%;
+  height: 103%;
+  content: '';
+  background-color: #000000;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.sectionSegunda .rows .shadow-video {
+  position: relative;
+}
+
+.sectionSegunda .rows .shadow-video::after {
+  position: absolute;
+  top: -1.5%;
+  left: -1.5%;
+  width: 103%;
+  height: 103%;
+  content: '';
+  background-color: #000000;
+  z-index: -1;
+  filter: blur(10px);
 }
 
 .sectionDonaciones {
@@ -442,7 +504,25 @@ p {
   height: 400px;
   width: 280px;
   border: #f1b24a solid 2px;
-  transition: all 1s;
+  transition: all 2s;
+  animation-name: card;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes card {
+  0% {
+    bottom: 30px;
+    opacity: 0%;
+  }
+  50% {
+    bottom: 15px;
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+    top: 0px;
+  }
 }
 
 .sectionDonaciones .card .cardImagen {
@@ -456,6 +536,19 @@ p {
 .sectionDonaciones .card .card-body {
   padding: 0px;
   color: black;
+  position: relative;
+}
+
+.sectionDonaciones .card .card-body::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #f1b24a;
+  z-index: -1;
+  filter: blur(19px);
 }
 
 .sectionDonaciones .card .card-title {
@@ -503,7 +596,7 @@ p {
 }
 
 .sectionDonaciones .card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .form {
@@ -515,6 +608,22 @@ p {
   flex-wrap: wrap;
   background-color: #4d774e;
   padding: 0px 5px 0px 5px;
+}
+
+.form .shadow-form {
+  position: absolute;
+}
+
+.form .shadow-form::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #000000;
+  z-index: -1;
+  filter: blur(1px);
 }
 
 .form__titulo {
@@ -646,14 +755,11 @@ p {
   .sectionSegunda__parrafo-fotos {
     font-size: 14px;
   }
-  .sectionSegunda .divFlex__parrafo-flex {
-    font-size: 14px;
-  }
   .sectionSegunda .rows {
     height: 448px;
   }
   .sectionSegunda .rows .imagenes {
-    width: 300px;
+    width: 260px;
     margin: 0px;
   }
   .sectionSegunda .divMapa {
@@ -692,7 +798,7 @@ p {
     color: #ffffff;
     text-align: justify;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 40px;
     margin: 0px;
@@ -717,6 +823,7 @@ p {
   }
   .header__proyecto {
     font-size: 16px;
+    text-align: center;
   }
   .header__menu {
     display: block;
@@ -779,11 +886,15 @@ p {
   .nav__paginas {
     align-self: center;
   }
+  .sectionSegunda {
+    position: relative;
+  }
   .sectionSegunda .sectionSegunda__parrafo {
     font-size: 12px;
   }
   .sectionSegunda__div-carousel {
     align-content: space-around;
+    position: relative;
   }
   .sectionSegunda .tituloSecundario {
     font-size: 14px;
@@ -795,7 +906,7 @@ p {
     margin-bottom: 30px;
   }
   .sectionSegunda .carousel__imagenes {
-    height: 300px;
+    height: 250px;
     object-fit: cover;
   }
   .sectionSegunda .divFlex__parrafo-flex {

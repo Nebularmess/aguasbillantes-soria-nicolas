@@ -2,11 +2,14 @@
     background-color: $color-header;
     height: 70px;
     margin: 0px;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 0;
     background-color: $color-header;
     border-bottom: $borde-verde solid 3px;
+    position: fixed;
+    z-index: 1000;
     &__izquierda {
         display: flex;
         height: 100%;
@@ -32,6 +35,8 @@
     }
     &__menu {
         display: none;
+        text-decoration: none;
+        color: $color-texto;
     }
     &__derecha {
         display: flex;
