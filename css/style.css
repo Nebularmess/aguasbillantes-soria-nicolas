@@ -886,31 +886,30 @@ p {
   .nav__paginas {
     align-self: center;
   }
-  .sectionSegunda {
-    position: relative;
-  }
-  .sectionSegunda .sectionSegunda__parrafo {
+  .main .sectionSegunda .sectionSegunda__parrafo {
     font-size: 12px;
   }
-  .sectionSegunda__div-carousel {
+  .main .sectionSegunda__div-carousel {
     align-content: space-around;
     position: relative;
+    display: grid;
   }
-  .sectionSegunda .tituloSecundario {
+  .main .sectionSegunda .tituloSecundario {
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .sectionSegunda .carousel {
+  .main .sectionSegunda .carousel {
     margin: 5px;
     margin-bottom: 30px;
   }
-  .sectionSegunda .carousel__imagenes {
+  .main .sectionSegunda .carousel__imagenes {
     height: 250px;
     object-fit: cover;
   }
-  .sectionSegunda .divFlex__parrafo-flex {
+  .main .sectionSegunda .divFlex__parrafo-flex {
     font-size: 14px;
+    display: grid;
   }
 }
 /*# sourceMappingURL=style.css.map */
