@@ -266,6 +266,11 @@
         }
     }
     .sectionDonaciones {
+        &__titulo {
+            font-size: 16px;
+            padding: 0px;
+            margin-top: 10px;
+        }
         .divCard {
             min-height: 1000px;
             display: grid;

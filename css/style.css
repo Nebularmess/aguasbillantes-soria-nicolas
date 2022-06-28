@@ -970,6 +970,11 @@ p {
   .form .btn-success {
     width: 285px;
   }
+  .sectionDonaciones__titulo {
+    font-size: 16px;
+    padding: 0px;
+    margin-top: 10px;
+  }
   .sectionDonaciones .divCard {
     min-height: 1000px;
     display: grid;
