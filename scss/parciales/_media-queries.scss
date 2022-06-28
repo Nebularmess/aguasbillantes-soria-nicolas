@@ -6,10 +6,10 @@
     }
     .nav {
         &__enlace {
-            font-size: 12px;
+            font-size: 11px;
         }
         &__enlace-nosotros {
-            font-size: 12px;
+            font-size: 11px;
         }
     }
     .sectionSegunda {
@@ -174,18 +174,42 @@
     }
     .main {
         .sectionSegunda {
-            .sectionSegunda__parrafo {
+            &__parrafo {
                 font-size: 12px;
+                padding: 20px;
+            }
+            &__parrafo-fotos {
+                font-size: 12px;
+                padding: 20px;
+            }
+            .tituloSecundario {
+                margin: 0px 0px 0px 0px;
+            }
+            .mobileGrid-macro {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 896px 896px 896px;
+                grid-template-areas: "primero-1"
+                                      "segundo-1"
+                                      "tercero-1";
+            }
+            .primero-1 {
+                grid-area: primero-1;
+            }
+            .segundo-1 {
+                grid-area: segundo-1;
+            }
+            .tercero-1 {
+                grid-area: tercero-1;
             }
             &__div-carousel {
                 align-content: space-around;
-                position: relative;
-                display: grid;
+                height: 448px;
             }
             .tituloSecundario {
                 font-size: 14px;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin: 10px;
+                text-align: center;
             }
             .carousel {
                 margin: 5px;
@@ -196,10 +220,99 @@
                     object-fit: cover;
                 }
             }
-            .divFlex__parrafo-flex {
-                font-size: 14px;
-                display: grid;
+            .rows__imagenes {
+                height: 448px;
+                border-top: 0px;
             }
+            .rows__imagenes-derecha {
+                height: 448px;
+            }
+            .divFlex {
+                &__parrafo-flex {
+                    font-size: 12px;
+                    padding: 20px;
+                }
+                &__video {
+                    height: 230px;
+                    width: 300px;
+                }
+            }
+            .divFlex-video {
+                border-left: 0px;
+                height: 448px;
+                border-top: 0px;
+            }
+            .divFlex-contactanos {
+                height: 448px;
+                border-bottom: 0px;
+            }
+            .shadow-video {
+                width: 300px;
+            }
+        }
+    }
+    .form {
+        &__comentario {
+            height: 50px;
+        }
+        &__margin {
+            margin: 0px;
+        }
+        .input {
+            width: 285px;
+        }
+        .btn-success {
+            width: 285px;
+        }
+    }
+    .sectionDonaciones {
+        .divCard {
+            min-height: 1000px;
+            display: grid;
+            grid-template-columns: none;
+            grid-template-rows: 450px 450px 450px 450px;
+            grid-template-areas:
+                                "top"
+                                "mid-top"
+                                "mid-bot"
+                                "bot";
+            align-content: center;
+            justify-content: center;
+            .card-1 {
+                grid-area: top;
+            }
+            .card-2 {
+                grid-area: mid-top;
+            }
+            .card-3 {
+                grid-area: mid-bot;
+            }
+            .card-4 {
+                grid-area: bot;
+            }
+        }
+    }
+    .footer {
+        height: 60px;
+        &__proyecto {
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        &__lista {
+            height: 28px;
+            background-color: $amarillo-bordes;
+            margin-right: 0px;
+            padding: 0px 10px 0px 10px
+        }
+        &__iconos {
+            font-size: 18px;
+            border-radius: 4px;
+            border: solid 2px $color-texto;
+        }
+        &__enlaces {
+            text-decoration: none;
+            height: 20px;
+            color: $color-texto;
         }
     }
 }

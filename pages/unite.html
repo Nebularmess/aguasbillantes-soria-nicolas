@@ -30,7 +30,7 @@
             <nav class="nav" id="lateral">
                 <ul class="nav__lista nav__derecha">
                     <li class="nav__item">
-                        <a class="nav__enlace" href="nosotros.html"><span class="nav__paginas">NOSOTROS</span></a>
+                        <a class="nav__enlace-nosotros" href="nosotros.html"><span class="nav__paginas">NOSOTROS</span></a>
                     </li>
                     <li class="nav__item">
                         <a class= "nav__enlace" href="unite.html"><span class="nav__paginas">UNITE</span></a>
@@ -42,7 +42,7 @@
                         <a class="nav__enlace" href="contactanos.html"><span class="nav__paginas">CONTACTANOS</span></a>
                     </li>
                     <li class="nav__item-volver">
-                        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
+                        <a class="nav__enlace" href="#"><span class="jam jam-close nav__menu"></span></a>
                     </li>
                 </ul>
             </nav>
@@ -55,8 +55,8 @@
             </div>
         </section>
         <section class="row sectionSegunda">
-            <div class="sectionSegunda__div-parrafo col-md-12">
-                <div class="row rows">
+            <div class="sectionSegunda__div-parrafo col-md-12 mobileGrid-macro">
+                <div class="row rows primero-1">
                     <div class="divFlex col-md-7">
                         <p class="sectionSegunda__parrafo">
                             Siempre estamos en busca de personas con nuestros mismos intereses y objetivos que potencien nuestra labor con su energía y esfuerzo.
@@ -65,62 +65,61 @@
                         </p>
                     </div>
                     <div class="col-md-5 sectionSegunda__div-form">
-                            <form class="form shadow-form" action="" method="" enctype="">
-                                <h4 class="form__titulo">Unite a nuestra causa</h4>
-                                <div class="col-md-12">
-                                    <label class="form__label" for="nombre">Nombre completo</label>
-                                    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
-                                </div>
-                                <div class="col-md-12">
-                                    <label class="form__label" for="edad">Edad</label>
-                                    <input class="form-control" type="number" id="edad" name="edad" placeholder="Ingrese su edad">
-                                </div>
-                                <div class="col-md-12">
-                                    <span class="form__label">Ingrese su genero</span>
-                                    <div class="col-md-12 divGenero">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="sexo" id="mujer">
-                                            <label class="form-check-label" for="Mujer">Mujer</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="sexo" id="hombre">
-                                            <label class="form-check-label" for="hombre">Hombre</label>
-                                        </div>
+                        <form class="form shadow-form" action="" method="" enctype="">
+                            <h4 class="form__titulo">Unite a nuestra causa</h4>
+                            <div class="col-md-12">
+                                <label class="form__label" for="nombre">Nombre completo</label>
+                                <input class="form-control input" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form__label" for="edad">Edad</label>
+                                <input class="form-control input" type="number" id="edad" name="edad" placeholder="Ingrese su edad">
+                            </div>
+                            <div class="col-md-12">
+                                <span class="form__label">Ingrese su genero</span>
+                                <div class="col-md-12 divGenero">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="mujer">
+                                        <label class="form-check-label" for="Mujer">Mujer</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexo" id="hombre">
+                                        <label class="form-check-label" for="hombre">Hombre</label>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <label class="form__label" for="correo label"><b>Email</b></label>
-                                    <input class="form-control input" type="email" id="correo" name="correo" placeholder="Ingrese su correo">
-                                </div>
-                                <div class="col-md-12">
-                                    <button class="btn btn-success"><b>Enviar</b></button>
-                                </div>
-                            </form>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form__label" for="correo label"><b>Email</b></label>
+                                <input class="form-control input" type="email" id="correo" name="correo" placeholder="Ingrese su correo">
+                            </div>
+                            <div class="col-md-12">
+                                <button class="btn btn-success"><b>Enviar</b></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row rows segundo-1">
+                    <div class="col-md-7 divFlex-video">
+                        <div class="shadow-video">
+                            <iframe class="divFlex__video" src="https://www.youtube.com/embed/l5XKCa-sIuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row rows">
-                <div class="col-md-7 divFlex-video">
-                    <div class="shadow-video">
-                        <iframe class="divFlex__video" src="https://www.youtube.com/embed/l5XKCa-sIuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="col-md-5 divFlex">
+                        <p class="sectionSegunda__parrafo-fotos">
+                            No subestimes el valor de tu participación! Uniendote a nuestra causa ayudas a la sostenibilidad de este ecosistema para las generaciones futuras.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-5 divFlex">
-                    <p class="sectionSegunda__parrafo-fotos">
-                        No subestimes el valor de tu participación! Uniendote a nuestra causa ayudas a la sostenibilidad de este ecosistema para las generaciones futuras.
-                    </p>
-                </div>
-            </div>
-            <div class="row rows">
-                <div class="divFlex col-md-7">
-                    <p class="sectionSegunda__parrafo">
-                        "Enseñar a cuidar el ambiente es enseñar a cuidar la vida"
-                    </p>
-                </div>
-                <div class="col-md-5 rows__imagenes-derecha">
-                    <div class="shadow">
-                        <img class ="imagenes" src="../images/otro-gato.jpg" alt="quien anda ahí">
+                <div class="row rows tercero-1">
+                    <div class="divFlex col-md-7">
+                        <p class="sectionSegunda__parrafo">
+                            "Enseñar a cuidar el ambiente es enseñar a cuidar la vida"
+                        </p>
+                    </div>
+                    <div class="col-md-5 rows__imagenes-derecha">
+                        <div class="shadow">
+                            <img class ="imagenes" src="../images/otro-gato.jpg" alt="quien anda ahí">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,22 +135,22 @@
         <div class="col-md-5">
             <ul class="footer__lista">
                 <li class="footer__items">
-                    <a class="enlaces" href="https://www.facebook.com/">
+                    <a class="footer__enlaces" href="https://www.facebook.com/">
                         <span class="jam jam-facebook footer__iconos footer__iconos-fb"></span>
                     </a>
                 </li>
                 <li class="footer__items">  
-                    <a class="enlaces" href="https://www.instagram.com/">
+                    <a class="footer__enlaces" href="https://www.instagram.com/">
                     <span class="jam jam-instagram footer__iconos footer__iconos-ig"></span>
                     </a>
                 </li>
                 <li class="footer__items">
-                    <a class="enlaces" href="https://www.twitter.com/">
+                    <a class="footer__enlaces" href="https://www.twitter.com/">
                         <span class="jam jam-twitter footer__iconos footer__iconos-tw"></span>
                     </a>
                 </li>
                 <li class="footer__items">
-                    <a class="enlaces" href="https://www.youtube.com/">
+                    <a class="footer__enlaces" href="https://www.youtube.com/">
                         <span class="jam jam-youtube-circle footer__iconos footer__iconos-yt"></span>
                     </a>
                 </li>

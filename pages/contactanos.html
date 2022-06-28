@@ -30,7 +30,7 @@
             <nav class="nav" id="lateral">
                 <ul class="nav__lista nav__derecha">
                     <li class="nav__item">
-                        <a class="nav__enlace" href="nosotros.html"><span class="nav__paginas">NOSOTROS</span></a>
+                        <a class="nav__enlace-nosotros" href="nosotros.html"><span class="nav__paginas">NOSOTROS</span></a>
                     </li>
                     <li class="nav__item">
                         <a class= "nav__enlace" href="unite.html"><span class="nav__paginas">UNITE</span></a>
@@ -42,7 +42,7 @@
                         <a class="nav__enlace" href="contactanos.html"><span class="nav__paginas">CONTACTANOS</span></a>
                     </li>
                     <li class="nav__item-volver">
-                        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
+                        <a class="nav__enlace" href="#"><span class="jam jam-close nav__menu"></span></a>
                     </li>
                 </ul>
             </nav>
@@ -55,8 +55,8 @@
             </div>
         </section>
         <section class="row sectionSegunda">
-            <div class="sectionSegunda__div-parrafo col-md-12">
-                <div class="row rows">
+            <div class="sectionSegunda__div-parrafo col-md-12 mobileGrid-macro">
+                <div class="row rows primero-1">
                     <div class="divFlex col-md-7">
                         <p class="sectionSegunda__parrafo">
                             Si posees dudas, sugerencias, o bien, deseas comunicarte con nosotros por cualquier otro motivo, 
@@ -70,16 +70,16 @@
                             <h4 class="form__titulo">CONTACTANOS</h4>
                             <div class="col-md-12">
                                 <label class="form__label" for="nombre">Nombre completo</label>
-                                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                                <input class="form-control input" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
                             </div>
                             <div class="col-md-12">
                                 <label class="label" for="correo"><b>Email</b></label>
                                 <input class="form-control input" type="email" id="correo" name="correo" placeholder="Email">
                             </div>
                             <div class="col-md-12">
-                                <div class="mb-3">
+                                <div class="mb-3 form__margin">
                                     <label for="comentario" class="form__label">Comentario</label>
-                                    <textarea class="form-control form__comentario" placeholder="Escribenos" id="comentario" rows="3"></textarea>
+                                    <textarea class="form-control form__comentario input" placeholder="Escribenos" id="comentario" rows="3"></textarea>
                                   </div>
                             </div>
                             <div class="col-md-12">
@@ -88,7 +88,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row rows">
+                <div class="row rows segundo-1">
                     <div class="col-md-7 divFlex-video">
                         <div class="shadow-video">
                             <iframe class="divFlex__video" src="https://www.youtube.com/embed/C-gFWXHNJ0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -103,68 +103,21 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="row rows">
-                <div class="divFlex col-md-7">
-                    <p class="sectionSegunda__parrafo">
-                        Independientemente de tu lugar, puedes generar un cambio que repercuta en tu entorno positivamente e influir para construir un mundo mejor para todos
-                    </p>
-                </div>
-                <div class="col-md-5 rows__imagenes-derecha">
-                    <div class="shadow">
-                        <img class ="imagenes" src="../images/mono.jpg" alt="mono">
+                <div class="row rows tercero-1">
+                    <div class="divFlex col-md-7">
+                        <p class="sectionSegunda__parrafo">
+                            Independientemente de tu lugar, puedes generar un cambio que repercuta en tu entorno positivamente e influir para construir un mundo mejor para todos
+                        </p>
+                    </div>
+                    <div class="col-md-5 rows__imagenes-derecha">
+                        <div class="shadow">
+                            <img class ="imagenes" src="../images/mono.jpg" alt="mono">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <!--             <section class = "col-md-7 section-izquierda">
-                    <h1 class="section__titulo">Contactanos!</h1>
-                    <p class="section__parrafo">
-                        Si posees dudas, sugerencias, o bien, deseas comunicarte con nosotros por cualquier otro motivo, 
-                        puedes contactarte con nosotros mediante nuestro correo "ProyectoAguasBrillantes@gmail.com".
-                        También se encuentran disponibles en el pie de página nuestras redes sociales 
-                        en ellas podrás interiorizarte más sobre nuestro trabajo y compromiso con nuestros esteros!
-                    </p>
-                    <div class="row bs formulario">
-                        <h3 class="col-md-12 section__titulo-form-c">Rellena el siguiente formulario y contactanos!</h3>
-                        <form class="form">
-                            <div class="col-md-12 input">
-                                <label class="label" for="nombre"><b>Nombre Completo</b></label>
-                                <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
-                            </div>
-                            <div class="col-md-12 form__correo">
-                                <label class="label" for="correo"><b>Email</b></label>
-                                <input class="form-control input" type="email" id="correo" name="correo" placeholder="Email">
-                            </div>
-                            <div class="col-md-12 form__comentario">
-                                <label class="label" for="comentario"><b>Escribenos</b></label>
-                                <input class="form-control" type="textarea" name="comentario" id="comentario" placeholder="Escribenos">
-                            </div>
-                            <button class="btn btn-success enviar"><b>Enviar</b></button>
-                        </form>
-                    </div>
-                </section>
-                <section class="col-md-5 section__derecha m-0">
-                    <h2 class="section__titulo-derecha">Enseñar a cuidar el ambiente es enseñar a cuidar la vida</h2>
-                    <p class="section__parrafo-derecha">La importancia del compromiso es la misma existencia de este ecosistema</p>
-                    <div class="carousel slide carousel-c" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../images/paisaje.jpg" class="carouselImagenes-c d-block w-100" alt="paisaje">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../images/carpinchos.jpg" class="carouselImagenes-c d-block w-100" alt="carpinchos">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../images/pajaro.jpg" class="carouselImagenes-c d-block w-100" alt="pajaro">
-                          </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </article>
-    </main> -->
     <footer class="footer row">
         <div class="col-md-7 footer__izquierda">
             <a class="enlaces footer__marca" href="../index.html">
@@ -175,29 +128,28 @@
         <div class="col-md-5">
             <ul class="footer__lista">
                 <li class="footer__items">
-                    <a class="enlaces" href="https://www.facebook.com/">
+                    <a class="footer__enlaces" href="https://www.facebook.com/">
                         <span class="jam jam-facebook footer__iconos footer__iconos-fb"></span>
                     </a>
                 </li>
                 <li class="footer__items">  
-                    <a class="enlaces" href="https://www.instagram.com/">
+                    <a class="footer__enlaces" href="https://www.instagram.com/">
                     <span class="jam jam-instagram footer__iconos footer__iconos-ig"></span>
                     </a>
                 </li>
                 <li class="footer__items">
-                    <a class="enlaces" href="https://www.twitter.com/">
+                    <a class="footer__enlaces" href="https://www.twitter.com/">
                         <span class="jam jam-twitter footer__iconos footer__iconos-tw"></span>
                     </a>
                 </li>
                 <li class="footer__items">
-                    <a class="enlaces" href="https://www.youtube.com/">
+                    <a class="footer__enlaces" href="https://www.youtube.com/">
                         <span class="jam jam-youtube-circle footer__iconos footer__iconos-yt"></span>
                     </a>
                 </li>
             </ul>
         </div>
     </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

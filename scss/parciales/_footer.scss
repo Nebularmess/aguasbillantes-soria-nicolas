@@ -7,14 +7,14 @@
         display: flex;
     }
     &__marca {
-        height: 60px;
-        width: 60px;
+        height: 57px;
+        width: 57px;
         justify-self: flex-start;
         align-self: center;
     }
     &__logo {
-        height: 60px;
-        width: 60px;
+        height: 55px;
+        width: 55px;
         object-fit: cover;
     }
     &__proyecto {
@@ -30,10 +30,12 @@
         padding-left: 0px;
         flex-direction: row;
         justify-content: space-between;
-        height: 65px;
+        align-items: center;
+        height: 67px;
     }
     &__enlaces {
-        align-self: center;
+        text-decoration: none;
+        color: $color-texto;
     }
     &__items {
         list-style: none;

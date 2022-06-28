@@ -671,15 +671,15 @@ p {
 }
 
 .footer__marca {
-  height: 60px;
-  width: 60px;
+  height: 57px;
+  width: 57px;
   justify-self: flex-start;
   align-self: center;
 }
 
 .footer__logo {
-  height: 60px;
-  width: 60px;
+  height: 55px;
+  width: 55px;
   object-fit: cover;
 }
 
@@ -697,11 +697,13 @@ p {
   padding-left: 0px;
   flex-direction: row;
   justify-content: space-between;
-  height: 65px;
+  align-items: center;
+  height: 67px;
 }
 
 .footer__enlaces {
-  align-self: center;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer__items {
@@ -728,10 +730,10 @@ p {
     font-size: 20px;
   }
   .nav__enlace {
-    font-size: 12px;
+    font-size: 11px;
   }
   .nav__enlace-nosotros {
-    font-size: 12px;
+    font-size: 11px;
   }
   .sectionSegunda .sectionSegunda__parrafo {
     font-size: 14px;
@@ -886,18 +888,40 @@ p {
   .nav__paginas {
     align-self: center;
   }
-  .main .sectionSegunda .sectionSegunda__parrafo {
+  .main .sectionSegunda__parrafo {
     font-size: 12px;
+    padding: 20px;
+  }
+  .main .sectionSegunda__parrafo-fotos {
+    font-size: 12px;
+    padding: 20px;
+  }
+  .main .sectionSegunda .tituloSecundario {
+    margin: 0px 0px 0px 0px;
+  }
+  .main .sectionSegunda .mobileGrid-macro {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 896px 896px 896px;
+    grid-template-areas: "primero-1" "segundo-1" "tercero-1";
+  }
+  .main .sectionSegunda .primero-1 {
+    grid-area: primero-1;
+  }
+  .main .sectionSegunda .segundo-1 {
+    grid-area: segundo-1;
+  }
+  .main .sectionSegunda .tercero-1 {
+    grid-area: tercero-1;
   }
   .main .sectionSegunda__div-carousel {
     align-content: space-around;
-    position: relative;
-    display: grid;
+    height: 448px;
   }
   .main .sectionSegunda .tituloSecundario {
     font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    text-align: center;
   }
   .main .sectionSegunda .carousel {
     margin: 5px;
@@ -907,9 +931,88 @@ p {
     height: 250px;
     object-fit: cover;
   }
+  .main .sectionSegunda .rows__imagenes {
+    height: 448px;
+    border-top: 0px;
+  }
+  .main .sectionSegunda .rows__imagenes-derecha {
+    height: 448px;
+  }
   .main .sectionSegunda .divFlex__parrafo-flex {
-    font-size: 14px;
+    font-size: 12px;
+    padding: 20px;
+  }
+  .main .sectionSegunda .divFlex__video {
+    height: 230px;
+    width: 300px;
+  }
+  .main .sectionSegunda .divFlex-video {
+    border-left: 0px;
+    height: 448px;
+    border-top: 0px;
+  }
+  .main .sectionSegunda .divFlex-contactanos {
+    height: 448px;
+    border-bottom: 0px;
+  }
+  .main .sectionSegunda .shadow-video {
+    width: 300px;
+  }
+  .form__comentario {
+    height: 50px;
+  }
+  .form__margin {
+    margin: 0px;
+  }
+  .form .input {
+    width: 285px;
+  }
+  .form .btn-success {
+    width: 285px;
+  }
+  .sectionDonaciones .divCard {
+    min-height: 1000px;
     display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 450px 450px 450px 450px;
+    grid-template-areas: "top" "mid-top" "mid-bot" "bot";
+    align-content: center;
+    justify-content: center;
+  }
+  .sectionDonaciones .divCard .card-1 {
+    grid-area: top;
+  }
+  .sectionDonaciones .divCard .card-2 {
+    grid-area: mid-top;
+  }
+  .sectionDonaciones .divCard .card-3 {
+    grid-area: mid-bot;
+  }
+  .sectionDonaciones .divCard .card-4 {
+    grid-area: bot;
+  }
+  .footer {
+    height: 60px;
+  }
+  .footer__proyecto {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  .footer__lista {
+    height: 28px;
+    background-color: #fd9c00a1;
+    margin-right: 0px;
+    padding: 0px 10px 0px 10px;
+  }
+  .footer__iconos {
+    font-size: 18px;
+    border-radius: 4px;
+    border: solid 2px #ffffff;
+  }
+  .footer__enlaces {
+    text-decoration: none;
+    height: 20px;
+    color: #ffffff;
   }
 }
 /*# sourceMappingURL=style.css.map */
